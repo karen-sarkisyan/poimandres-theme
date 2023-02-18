@@ -1,45 +1,26 @@
-// Rich's colors
-// #FFAB40 rusty
-// #F6B26B light rusty
-// #1b1e28 bg, but what Im looking for is  probably #27241b
-// #F3F3F3 whitish
-// #B4A7D6 purple
-// #6D9EEB blue
-// #93C47D green
-// #E06666 red
-// #ffd966 yellow
-// And some of mine colors
-// #877f60 rusty gray
-// #ad9586 darker gray rusty
-// #a3a2a0 basic gray
-
-// add colors for booleans for rust
-
 const base = {
   colors: {
-    brightYellow: '#ffd966', // yellow
-    brightMint: '#FFAB40', // rusty, but untangle from literals
-    lowerMint: '#5fb3a1', // ???
+    brightYellow: '#ffd966',
 
-    rusty: '#FFAB40', // rusty
-    purple: '#B4A7D6', // purple
-    green: '#93C47D', // green
-    blue: '#6D9EEB', // blue
+    rusty: '#FFAB40',
+    purple: '#B4A7D6',
+    green: '#93C47D',
+    blue: '#6D9EEB',
 
-    lowerBlue: '#ffc38a', // probably to remove
-    lightBlue: '#fff4e5', // probably change to smth light rusty
-    bluishGrayBrighter: '#7390AA', // probably to remove
+    lowerRust: '#ffc38a',
+    lightRust: '#fff4e5',
+    bluishGrayBrighter: '#7390AA',
 
-    hotRed: '#E06666', // red
-    pink: '#f087bd', // ???
-    gray: '#a3a2a0', // Parens, type annotations, almost fucking everything in UI around
+    hotRed: '#E06666',
+    pink: '#f087bd',
+    gray: '#a3a2a0',
 
-    darkerGray: '#ad9586', // darker gray rusty
-    bluishGray: '#877f60', // rusty gray
-    focus: '#303340', // ???
-    bg: '#1b1e28', // background
+    darkerGray: '#ad9586',
+    bluishGray: '#877f60',
+    focus: '#303340',
+    bg: '#1b1e28',
 
-    offWhite: '#F3F3F3', // whitish
+    offWhite: '#F3F3F3',
     selection: '#717cb425',
 
     white: '#ffffff',
@@ -89,17 +70,17 @@ function schema({ colors, styles }) {
       "dropdown.background": "${colors.bg}",
       "dropdown.border": "${colors.white}10",
       "editor.background": "${colors.bg}",
-      "editor.findMatchBackground": "${colors.lightBlue}40",
-      "editor.findMatchBorder": "${colors.lightBlue}",
-      "editor.findMatchHighlightBackground": "${colors.lightBlue}40",
+      "editor.findMatchBackground": "${colors.lightRust}40",
+      "editor.findMatchBorder": "${colors.lightRust}",
+      "editor.findMatchHighlightBackground": "${colors.lightRust}40",
       "editor.foreground": "${colors.gray}",
       "editor.lineHighlightBackground": "${colors.selection}",
       "editor.lineHighlightBorder": "${colors.transparent}",
       "editor.selectionBackground": "${colors.selection}",
       "editor.selectionHighlightBackground": "${colors.transparent}",
-      "editor.selectionHighlightBorder": "${colors.lightBlue}80",
-      "editor.wordHighlightBackground": "${colors.lightBlue}20",
-      "editor.wordHighlightStrongBackground": "${colors.lightBlue}40",
+      "editor.selectionHighlightBorder": "${colors.lightRust}80",
+      "editor.wordHighlightBackground": "${colors.lightRust}20",
+      "editor.wordHighlightStrongBackground": "${colors.lightRust}40",
       "editorBracketMatch.border": "${colors.offWhite}40",
       "editorCursor.foreground": "${colors.gray}",
       "editorGroup.border": "${colors.black}30",
@@ -108,14 +89,14 @@ function schema({ colors, styles }) {
       "editorHoverWidget.border": "${colors.white}10",
       "editorIndentGuide.background": "${colors.focus}",
       "editorLineNumber.foreground": "${colors.darkerGray}50",
-      "editorLink.activeForeground": "${colors.lightBlue}",
+      "editorLink.activeForeground": "${colors.lightRust}",
       "editorSuggestWidget.background": "${colors.bg}",
       "editorSuggestWidget.border": "${colors.white}10",
       "editorSuggestWidget.foreground": "${colors.gray}",
-      "editorSuggestWidget.highlightForeground": "${colors.brightMint}",
+      "editorSuggestWidget.highlightForeground": "${colors.rusty}",
       "editorSuggestWidget.selectedBackground": "${colors.black}50",
       "editorWidget.background": "${colors.bg}",
-      "editor.findRangeHighlightBackground": "${colors.lightBlue}40",
+      "editor.findRangeHighlightBackground": "${colors.lightRust}40",
       "editor.focusedStackFrameHighlightBackground": "#7abd7a4d",
       "editor.foldBackground": "#717cb40b",
       "editor.hoverHighlightBackground": "#264f7840",
@@ -125,7 +106,7 @@ function schema({ colors, styles }) {
       "editor.snippetFinalTabstopHighlightBorder": "#525252",
       "editor.snippetTabstopHighlightBackground": "#7c7c7c4d",
       "editor.stackFrameHighlightBackground": "#ffff0033",
-      "editor.symbolHighlightBackground": "${colors.lowerBlue}60",
+      "editor.symbolHighlightBackground": "${colors.lowerRust}60",
       "editorBracketMatch.background": "${colors.transparent}",
       "editorCodeLens.foreground": "${colors.gray}",
       "editorError.foreground": "${colors.hotRed}",
@@ -134,39 +115,39 @@ function schema({ colors, styles }) {
       "editorGutter.background": "${colors.bg}",
       "editorGutter.commentRangeForeground": "${colors.gray}",
       "editorGutter.foldingControlForeground": "${colors.gray}",
-      "editorGutter.addedBackground": "${colors.lowerMint}40",
+      "editorGutter.addedBackground": "${colors.lowerRust}40",
       "editorGutter.deletedBackground": "${colors.hotRed}40",
-      "editorGutter.modifiedBackground": "${colors.lightBlue}20",
+      "editorGutter.modifiedBackground": "${colors.lightRust}20",
       "editorHint.foreground": "${colors.bluishGrayBrighter}b3",
       "editorHoverWidget.foreground": "${colors.gray}",
       "editorHoverWidget.statusBarBackground": "#202430",
       "editorIndentGuide.activeBackground": "#e3e4e229",
-      "editorInfo.foreground": "${colors.lightBlue}",
+      "editorInfo.foreground": "${colors.lightRust}",
       "editorInlineHint.background": "${colors.gray}",
       "editorInlineHint.foreground": "${colors.bg}",
       "editorLightBulb.foreground": "${colors.brightYellow}",
-      "editorLightBulbAutoFix.foreground": "${colors.lightBlue}",
+      "editorLightBulbAutoFix.foreground": "${colors.lightRust}",
       "editorLineNumber.activeForeground": "${colors.gray}",
       "editorMarkerNavigation.background": "#2d2d30",
       "editorMarkerNavigationError.background": "${colors.hotRed}",
-      "editorMarkerNavigationInfo.background": "${colors.lightBlue}",
+      "editorMarkerNavigationInfo.background": "${colors.lightRust}",
       "editorMarkerNavigationWarning.background": "${colors.brightYellow}",
-      "editorOverviewRuler.addedForeground": "${colors.lowerMint}99",
+      "editorOverviewRuler.addedForeground": "${colors.lowerRust}99",
       "editorOverviewRuler.border": "${colors.transparent}",
       "editorOverviewRuler.bracketMatchForeground": "#a0a0a0",
       "editorOverviewRuler.commonContentForeground": "${colors.gray}66",
-      "editorOverviewRuler.currentContentForeground": "${colors.lowerMint}80",
+      "editorOverviewRuler.currentContentForeground": "${colors.lowerRust}80",
       "editorOverviewRuler.deletedForeground": "${colors.hotRed}99",
       "editorOverviewRuler.errorForeground": "${colors.hotRed}b3",
       "editorOverviewRuler.findMatchForeground": "${colors.offWhite}20",
-      "editorOverviewRuler.incomingContentForeground": "${colors.lowerBlue}80",
-      "editorOverviewRuler.infoForeground": "${colors.lightBlue}",
-      "editorOverviewRuler.modifiedForeground": "${colors.lowerBlue}99",
-      "editorOverviewRuler.rangeHighlightForeground": "${colors.lowerBlue}99",
+      "editorOverviewRuler.incomingContentForeground": "${colors.lowerRust}80",
+      "editorOverviewRuler.infoForeground": "${colors.lightRust}",
+      "editorOverviewRuler.modifiedForeground": "${colors.lowerRust}99",
+      "editorOverviewRuler.rangeHighlightForeground": "${colors.lowerRust}99",
       "editorOverviewRuler.selectionHighlightForeground": "#a0a0a0cc",
       "editorOverviewRuler.warningForeground": "${colors.brightYellow}",
       "editorOverviewRuler.wordHighlightForeground": "#a0a0a0cc",
-      "editorOverviewRuler.wordHighlightStrongForeground": "${colors.lowerBlue}cc",
+      "editorOverviewRuler.wordHighlightStrongForeground": "${colors.lowerRust}cc",
       "editorPane.background": "${colors.bg}",
       "editorRuler.foreground": "${colors.offWhite}10",
       "editorUnnecessaryCode.opacity": "${colors.black}aa",
@@ -183,7 +164,7 @@ function schema({ colors, styles }) {
       "input.placeholderForeground": "${colors.gray}60",
       "inputValidation.errorBorder": "${colors.hotRed}",
       "inputValidation.errorForeground": "${colors.hotRed}",
-      "inputValidation.infoBorder": "${colors.lowerBlue}",
+      "inputValidation.infoBorder": "${colors.lowerRust}",
       "inputValidation.warningBorder": "${colors.brightYellow}",
       "notifications.background": "${colors.bg}",
       "notifications.foreground": "${colors.offWhite}",
@@ -213,32 +194,32 @@ function schema({ colors, styles }) {
       "tab.inactiveBackground": "${colors.bg}",
       "tab.inactiveForeground": "${colors.darkerGray}",
       "tab.unfocusedActiveForeground": "${colors.gray}",
-      "tab.activeModifiedBorder": "${colors.lightBlue}",
-      "tab.inactiveModifiedBorder": "${colors.lightBlue}80",
+      "tab.activeModifiedBorder": "${colors.lightRust}",
+      "tab.inactiveModifiedBorder": "${colors.lightRust}80",
       "tab.lastPinnedBorder": "${colors.transparent}",
       "tab.unfocusedActiveBackground": "${colors.bg}",
-      "tab.unfocusedActiveModifiedBorder": "${colors.lightBlue}40",
+      "tab.unfocusedActiveModifiedBorder": "${colors.lightRust}40",
       "tab.unfocusedInactiveBackground": "${colors.bg}",
       "tab.unfocusedInactiveForeground": "${colors.gray}80",
-      "tab.unfocusedInactiveModifiedBorder": "${colors.lightBlue}40",      
+      "tab.unfocusedInactiveModifiedBorder": "${colors.lightRust}40",      
       "terminal.ansiBlack": "${colors.bg}",
-      "terminal.ansiBlue": "${colors.lowerBlue}",
+      "terminal.ansiBlue": "${colors.lowerRust}",
       "terminal.ansiBrightBlack": "${colors.gray}",
-      "terminal.ansiBrightBlue": "${colors.lightBlue}",
-      "terminal.ansiBrightCyan": "${colors.lightBlue}",
-      "terminal.ansiBrightGreen": "${colors.brightMint}",
+      "terminal.ansiBrightBlue": "${colors.lightRust}",
+      "terminal.ansiBrightCyan": "${colors.lightRust}",
+      "terminal.ansiBrightGreen": "${colors.rusty}",
       "terminal.ansiBrightMagenta": "${colors.pink}",
       "terminal.ansiBrightRed": "${colors.hotRed}",
       "terminal.ansiBrightWhite": "${colors.white}",
       "terminal.ansiBrightYellow": "${colors.brightYellow}",
-      "terminal.ansiCyan": "${colors.lowerBlue}",
-      "terminal.ansiGreen": "${colors.brightMint}",
+      "terminal.ansiCyan": "${colors.lowerRust}",
+      "terminal.ansiGreen": "${colors.rusty}",
       "terminal.ansiMagenta": "${colors.pink}",
       "terminal.ansiRed": "${colors.hotRed}",
       "terminal.ansiWhite": "${colors.white}",
       "terminal.ansiYellow": "${colors.brightYellow}",
-      "textLink.activeForeground": "${colors.lightBlue}",
-      "textLink.foreground": "${colors.lightBlue}",
+      "textLink.activeForeground": "${colors.lightRust}",
+      "textLink.foreground": "${colors.lightRust}",
       "titleBar.activeBackground": "${colors.bg}",
       "titleBar.activeForeground": "${colors.gray}",
       "titleBar.inactiveBackground": "${colors.bg}",
@@ -258,11 +239,11 @@ function schema({ colors, styles }) {
       "button.secondaryBackground": "${colors.gray}",
       "button.secondaryForeground": "${colors.white}",
       "button.secondaryHoverBackground": "${colors.gray}",
-      "charts.blue": "${colors.lightBlue}",
+      "charts.blue": "${colors.lightRust}",
       "charts.foreground": "${colors.gray}",
-      "charts.green": "${colors.brightMint}",
+      "charts.green": "${colors.rusty}",
       "charts.lines": "${colors.gray}80",
-      "charts.orange": "${colors.lowerBlue}",
+      "charts.orange": "${colors.lowerRust}",
       "charts.purple": "${colors.pink}",
       "charts.red": "${colors.hotRed}",
       "charts.yellow": "${colors.brightYellow}",
@@ -270,7 +251,7 @@ function schema({ colors, styles }) {
       "checkbox.border": "${colors.white}10",
       "checkbox.foreground": "${colors.offWhite}",
       "debugConsole.errorForeground": "${colors.hotRed}",
-      "debugConsole.infoForeground": "${colors.lightBlue}",
+      "debugConsole.infoForeground": "${colors.lightRust}",
       "debugConsole.sourceForeground": "${colors.gray}",
       "debugConsole.warningForeground": "${colors.brightYellow}",
       "debugConsoleInputIcon.foreground": "${colors.gray}",
@@ -279,30 +260,30 @@ function schema({ colors, styles }) {
       "debugIcon.breakpointCurrentStackframeForeground": "${colors.brightYellow}",
       "debugIcon.breakpointDisabledForeground": "${colors.bluishGrayBrighter}",
       "debugIcon.breakpointForeground": "${colors.hotRed}",
-      "debugIcon.breakpointStackframeForeground": "${colors.lowerMint}",
+      "debugIcon.breakpointStackframeForeground": "${colors.lowerRust}",
       "debugIcon.breakpointUnverifiedForeground": "${colors.bluishGrayBrighter}",
-      "debugIcon.continueForeground": "${colors.lightBlue}",
+      "debugIcon.continueForeground": "${colors.lightRust}",
       "debugIcon.disconnectForeground": "${colors.hotRed}",
-      "debugIcon.pauseForeground": "${colors.lightBlue}",
-      "debugIcon.restartForeground": "${colors.lowerMint}",
-      "debugIcon.startForeground": "${colors.lowerMint}",
-      "debugIcon.stepBackForeground": "${colors.lightBlue}",
-      "debugIcon.stepIntoForeground": "${colors.lightBlue}",
-      "debugIcon.stepOutForeground": "${colors.lightBlue}",
-      "debugIcon.stepOverForeground": "${colors.lightBlue}",
+      "debugIcon.pauseForeground": "${colors.lightRust}",
+      "debugIcon.restartForeground": "${colors.lowerRust}",
+      "debugIcon.startForeground": "${colors.lowerRust}",
+      "debugIcon.stepBackForeground": "${colors.lightRust}",
+      "debugIcon.stepIntoForeground": "${colors.lightRust}",
+      "debugIcon.stepOutForeground": "${colors.lightRust}",
+      "debugIcon.stepOverForeground": "${colors.lightRust}",
       "debugIcon.stopForeground": "${colors.hotRed}",
-      "debugTokenExpression.boolean": "${colors.lowerBlue}",
+      "debugTokenExpression.boolean": "${colors.lowerRust}",
       "debugTokenExpression.error": "${colors.hotRed}",
       "debugTokenExpression.name": "${colors.offWhite}",
-      "debugTokenExpression.number": "${colors.lowerMint}",
-      "debugTokenExpression.string": "${colors.lowerBlue}",
+      "debugTokenExpression.number": "${colors.lowerRust}",
+      "debugTokenExpression.string": "${colors.lowerRust}",
       "debugTokenExpression.value": "${colors.gray}99",
       "debugToolBar.background": "${colors.focus}",
       "debugView.exceptionLabelBackground": "${colors.hotRed}",
       "debugView.exceptionLabelForeground": "${colors.offWhite}",
       "debugView.stateLabelBackground": "${colors.focus}",
       "debugView.stateLabelForeground": "${colors.gray}",
-      "debugView.valueChangedHighlight": "${colors.lowerBlue}",
+      "debugView.valueChangedHighlight": "${colors.lowerRust}",
       "descriptionForeground": "${colors.gray}b3",
       "diffEditor.diagonalFill": "${colors.gray}33",
       "dropdown.foreground": "${colors.offWhite}",    
@@ -312,16 +293,16 @@ function schema({ colors, styles }) {
       "extensionButton.prominentForeground": "${colors.white}",
       "extensionIcon.starForeground": "${colors.brightYellow}",
       "foreground": "${colors.gray}",
-      "gitDecoration.addedResourceForeground": "${colors.lowerMint}",
+      "gitDecoration.addedResourceForeground": "${colors.lowerRust}",
       "gitDecoration.conflictingResourceForeground": "${colors.hotRed}",
       "gitDecoration.deletedResourceForeground": "${colors.hotRed}",
       "gitDecoration.ignoredResourceForeground": "${colors.darkerGray}70",
-      "gitDecoration.modifiedResourceForeground": "${colors.lightBlue}",
-      "gitDecoration.renamedResourceForeground": "${colors.brightMint}",
+      "gitDecoration.modifiedResourceForeground": "${colors.lightRust}",
+      "gitDecoration.renamedResourceForeground": "${colors.rusty}",
       "gitDecoration.stageDeletedResourceForeground": "${colors.hotRed}",
-      "gitDecoration.stageModifiedResourceForeground": "${colors.lightBlue}",
-      "gitDecoration.submoduleResourceForeground": "${colors.lowerBlue}",
-      "gitDecoration.untrackedResourceForeground": "${colors.brightMint}",
+      "gitDecoration.stageModifiedResourceForeground": "${colors.lightRust}",
+      "gitDecoration.submoduleResourceForeground": "${colors.lowerRust}",
+      "gitDecoration.untrackedResourceForeground": "${colors.rusty}",
       "icon.foreground": "${colors.gray}",
       "imagePreview.border": "${colors.focus}",
       "inputOption.activeBackground": "${colors.transparent}",
@@ -332,7 +313,7 @@ function schema({ colors, styles }) {
       "inputValidation.warningBackground": "${colors.bluishGray}",
       "list.deemphasizedForeground": "${colors.darkerGray}",
       "list.dropBackground": "${colors.bluishGray}",
-      "list.filterMatchBackground": "${colors.lowerBlue}60",
+      "list.filterMatchBackground": "${colors.lowerRust}60",
       "list.focusOutline": "${colors.transparent}",
       "list.invalidItemForeground": "${colors.brightYellow}",
       "list.warningForeground": "${colors.brightYellow}",
@@ -344,7 +325,7 @@ function schema({ colors, styles }) {
       "list.errorForeground": "${colors.hotRed}",
       "list.focusBackground": "${colors.focus}80",
       "list.focusForeground": "${colors.gray}",
-      "list.highlightForeground": "${colors.lowerMint}",
+      "list.highlightForeground": "${colors.lowerRust}",
       "list.hoverBackground": "${colors.focus}80",
       "list.hoverForeground": "${colors.offWhite}",
       "list.inactiveSelectionBackground": "${colors.focus}80",
@@ -358,17 +339,17 @@ function schema({ colors, styles }) {
       "menubar.selectionForeground": "${colors.gray}",
       "merge.commonContentBackground": "${colors.gray}29",
       "merge.commonHeaderBackground": "${colors.gray}66",
-      "merge.currentContentBackground": "${colors.lowerMint}33",
-      "merge.currentHeaderBackground": "${colors.lowerMint}80",
-      "merge.incomingContentBackground": "${colors.lowerBlue}33",
-      "merge.incomingHeaderBackground": "${colors.lowerBlue}80",
+      "merge.currentContentBackground": "${colors.lowerRust}33",
+      "merge.currentHeaderBackground": "${colors.lowerRust}80",
+      "merge.incomingContentBackground": "${colors.lowerRust}33",
+      "merge.incomingHeaderBackground": "${colors.lowerRust}80",
       "minimap.errorHighlight": "${colors.hotRed}",
-      "minimap.findMatchHighlight": "${colors.lightBlue}",
+      "minimap.findMatchHighlight": "${colors.lightRust}",
       "minimap.selectionHighlight": "${colors.offWhite}40",
       "minimap.warningHighlight": "${colors.brightYellow}",
-      "minimapGutter.addedBackground": "${colors.lowerMint}80",
+      "minimapGutter.addedBackground": "${colors.lowerRust}80",
       "minimapGutter.deletedBackground": "${colors.hotRed}80",
-      "minimapGutter.modifiedBackground": "${colors.lightBlue}80",
+      "minimapGutter.modifiedBackground": "${colors.lightRust}80",
       "minimapSlider.activeBackground": "${colors.gray}30",
       "minimapSlider.background": "${colors.gray}20",
       "minimapSlider.hoverBackground": "${colors.gray}30",
@@ -390,12 +371,12 @@ function schema({ colors, styles }) {
       "notebookScrollbarSlider.hoverBackground": "${colors.gray}25",
       "notebookStatusErrorIcon.foreground": "${colors.hotRed}",
       "notebookStatusRunningIcon.foreground": "${colors.gray}",
-      "notebookStatusSuccessIcon.foreground": "${colors.lowerMint}",
+      "notebookStatusSuccessIcon.foreground": "${colors.lowerRust}",
       "notificationCenterHeader.background": "${colors.focus}",
-      "notificationLink.foreground": "${colors.lightBlue}",
+      "notificationLink.foreground": "${colors.lightRust}",
       "notifications.border": "${colors.focus}",
       "notificationsErrorIcon.foreground": "${colors.hotRed}",
-      "notificationsInfoIcon.foreground": "${colors.lightBlue}",
+      "notificationsInfoIcon.foreground": "${colors.lightRust}",
       "notificationsWarningIcon.foreground": "${colors.brightYellow}",
       "panel.background": "${colors.bg}",
       "panel.dropBorder": "${colors.gray}",
@@ -412,18 +393,18 @@ function schema({ colors, styles }) {
       "peekViewResult.selectionForeground": "${colors.white}",
       "peekViewTitleLabel.foreground": "${colors.white}",
       "pickerGroup.border": "${colors.gray}",
-      "pickerGroup.foreground": "${colors.lowerBlue}",
+      "pickerGroup.foreground": "${colors.lowerRust}",
       "problemsErrorIcon.foreground": "${colors.hotRed}",
-      "problemsInfoIcon.foreground": "${colors.lightBlue}",
+      "problemsInfoIcon.foreground": "${colors.lightRust}",
       "problemsWarningIcon.foreground": "${colors.brightYellow}",
-      "progressBar.background": "${colors.lowerBlue}",
+      "progressBar.background": "${colors.lowerRust}",
       "quickInput.background": "${colors.bg}",
       "quickInput.foreground": "${colors.gray}",
       "quickInputList.focusBackground": "${colors.gray}10",
       "quickInputTitle.background": "${colors.white}1b",
       "sash.hoverBorder": "${colors.transparent}",
       "scm.providerBorder": "${colors.offWhite}10",
-      "searchEditor.findMatchBackground": "${colors.lightBlue}50",
+      "searchEditor.findMatchBackground": "${colors.lightRust}50",
       "searchEditor.textInputBorder": "${colors.white}10",
       "settings.checkboxBackground": "${colors.bg}",
       "settings.checkboxBorder": "${colors.white}10",
@@ -434,7 +415,7 @@ function schema({ colors, styles }) {
       "settings.dropdownListBorder": "${colors.offWhite}10",
       "settings.focusedRowBackground": "${colors.transparent}",
       "settings.headerForeground": "${colors.offWhite}",
-      "settings.modifiedItemIndicator": "${colors.lightBlue}",
+      "settings.modifiedItemIndicator": "${colors.lightRust}",
       "settings.numberInputBackground": "${colors.white}05",
       "settings.numberInputBorder": "${colors.white}10",
       "settings.numberInputForeground": "${colors.offWhite}",
@@ -462,13 +443,13 @@ function schema({ colors, styles }) {
       "symbolIcon.constantForeground": "${colors.gray}",
       "symbolIcon.constructorForeground": "${colors.pink}",
       "symbolIcon.enumeratorForeground": "${colors.brightYellow}",
-      "symbolIcon.enumeratorMemberForeground": "${colors.lightBlue}",
+      "symbolIcon.enumeratorMemberForeground": "${colors.lightRust}",
       "symbolIcon.eventForeground": "${colors.brightYellow}",
-      "symbolIcon.fieldForeground": "${colors.lightBlue}",
+      "symbolIcon.fieldForeground": "${colors.lightRust}",
       "symbolIcon.fileForeground": "${colors.gray}",
       "symbolIcon.folderForeground": "${colors.gray}",
       "symbolIcon.functionForeground": "${colors.pink}",
-      "symbolIcon.interfaceForeground": "${colors.lightBlue}",
+      "symbolIcon.interfaceForeground": "${colors.lightRust}",
       "symbolIcon.keyForeground": "${colors.gray}",
       "symbolIcon.keywordForeground": "${colors.gray}",
       "symbolIcon.methodForeground": "${colors.pink}",
@@ -487,36 +468,36 @@ function schema({ colors, styles }) {
       "symbolIcon.textForeground": "${colors.gray}",
       "symbolIcon.typeParameterForeground": "${colors.gray}",
       "symbolIcon.unitForeground": "${colors.gray}",
-      "symbolIcon.variableForeground": "${colors.lightBlue}",
+      "symbolIcon.variableForeground": "${colors.lightRust}",
       "terminal.border": "${colors.transparent}",
       "terminal.foreground": "${colors.gray}",
       "terminal.selectionBackground": "${colors.selection}",
       "terminalCommandDecoration.errorBackground": "${colors.hotRed}",
-      "terminalCommandDecoration.successBackground": "${colors.brightMint}",
+      "terminalCommandDecoration.successBackground": "${colors.rusty}",
       "terminalCommandDecoration.defaultBackground": "${colors.darkerGray}",
       "testing.iconErrored": "${colors.hotRed}",
       "testing.iconFailed": "${colors.hotRed}",
-      "testing.iconPassed": "${colors.brightMint}",
+      "testing.iconPassed": "${colors.rusty}",
       "testing.iconQueued": "${colors.brightYellow}",
       "testing.iconSkipped": "${colors.bluishGrayBrighter}",
       "testing.iconUnset": "${colors.bluishGrayBrighter}",
       "testing.message.error.decorationForeground": "${colors.hotRed}",
       "testing.message.error.lineBackground": "${colors.hotRed}33",
       "testing.message.hint.decorationForeground": "${colors.bluishGrayBrighter}b3",
-      "testing.message.info.decorationForeground": "${colors.lightBlue}",
-      "testing.message.info.lineBackground": "${colors.lowerBlue}33",
+      "testing.message.info.decorationForeground": "${colors.lightRust}",
+      "testing.message.info.lineBackground": "${colors.lowerRust}33",
       "testing.message.warning.decorationForeground": "${colors.brightYellow}",
       "testing.message.warning.lineBackground": "${colors.brightYellow}33",
       "testing.peekBorder": "${colors.hotRed}",
-      "testing.runAction": "${colors.brightMint}",
+      "testing.runAction": "${colors.rusty}",
       "textBlockQuote.background": "${colors.bluishGrayBrighter}1a",
-      "textBlockQuote.border": "${colors.lowerBlue}80",
+      "textBlockQuote.border": "${colors.lowerRust}80",
       "textCodeBlock.background": "${colors.black}50",
       "textPreformat.foreground": "${colors.offWhite}",
       "textSeparator.foreground": "${colors.white}2e",
       "tree.tableColumnsBorder": "${colors.gray}20",
       "welcomePage.progress.background": "${colors.white}05",
-      "welcomePage.progress.foreground": "${colors.lowerMint}",
+      "welcomePage.progress.foreground": "${colors.lowerRust}",
       "welcomePage.tileBackground": "${colors.bg}",
       "welcomePage.tileHoverBackground": "${colors.focus}"
     },
@@ -538,7 +519,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["variable.other.constant.object", "variable.other.readwrite.alias", "meta.import variable.other.readwrite"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -556,7 +537,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["entity.name.function.method", "string.unquoted", "meta.object.member"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -568,13 +549,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["keyword.control.flow"],
         "settings": {
-          "foreground": "${colors.brightMint}c0"
+          "foreground": "${colors.rusty}c0"
         }
       },
       {
         "scope": ["keyword.operator.new", "keyword.control.new"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -582,7 +563,7 @@ function schema({ colors, styles }) {
           "variable.language.this", "storage.modifier.async", "storage.modifier", "variable.language.super"
         ],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -648,7 +629,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["keyword.control.module", "keyword.control.import", "keyword.control.export", "keyword.control.default", "meta.import", "meta.export"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -660,7 +641,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["keyword-meta.export"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -694,13 +675,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["support.class.component"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
         "scope": ["entity.name.tag", "entity.name.tag", "meta.tag.sgml", "markup.deleted.git_gutter"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -720,13 +701,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["source.cpp meta.block variable.other"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
         "scope": ["support.other.variable", "string.other.link"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -765,13 +746,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["entity.other.inherited-class"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
         "scope": ["meta.type.declaration"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -808,7 +789,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["support.class", "support.constant", "variable.other.constant.object"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -821,7 +802,7 @@ function schema({ colors, styles }) {
           "source.postcss support.type.property-name"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -860,14 +841,14 @@ function schema({ colors, styles }) {
       {
         "scope": ["text.html.basic entity.other.attribute-name.html", "text.html.basic entity.other.attribute-name"],
         "settings": {
-          "foreground": "${colors.lowerMint}",
+          "foreground": "${colors.lowerRust}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
       {
         "scope": ["entity.other.attribute-name.class"],
         "settings": {
-          "foreground": "${colors.lowerMint}"
+          "foreground": "${colors.lowerRust}"
         }
       },
       {
@@ -879,7 +860,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["markup.inserted"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -897,7 +878,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["string.regexp"],
         "settings": {
-          "foreground": "${colors.lowerMint}"
+          "foreground": "${colors.lowerRust}"
         }
       },
       {
@@ -906,13 +887,13 @@ function schema({ colors, styles }) {
           "string.quoted.byte.raw.rust"
         ],
         "settings": {
-          "foreground": "${colors.lowerMint}"
+          "foreground": "${colors.lowerRust}"
         }
       },
       {
         "scope": ["*url*", "*link*", "*uri*"],
         "settings": {
-          "foreground": "${colors.lightBlue}",
+          "foreground": "${colors.lightRust}",
           "fontStyle": "underline"
         }
       },
@@ -926,7 +907,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["source.js constant.other.object.key.js string.unquoted.label.js"],
         "settings": {
-          "foreground": "${colors.lowerMint}",
+          "foreground": "${colors.lowerRust}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
@@ -941,7 +922,7 @@ function schema({ colors, styles }) {
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -973,7 +954,7 @@ function schema({ colors, styles }) {
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -1009,7 +990,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["text.html.markdown markup.inline.raw.markdown"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -1072,7 +1053,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -1084,25 +1065,25 @@ function schema({ colors, styles }) {
       {
         "scope": ["string.other.link.title.markdown"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
         "scope": ["string.other.link.description.title.markdown"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
         "scope": ["constant.other.reference.link.markdown"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
         "scope": ["markup.raw.block"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -1143,13 +1124,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["markup.table"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
         "scope": "token.info-token",
         "settings": {
-          "foreground": "${colors.lowerBlue}"
+          "foreground": "${colors.lowerRust}"
         }
       },
       {
@@ -1220,7 +1201,7 @@ function schema({ colors, styles }) {
           "markup.list.unnumbered.markdown"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -1232,7 +1213,7 @@ function schema({ colors, styles }) {
           "meta.image.inline.markdown string.other.link.description.title.markdown"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}",
+          "foreground": "${colors.lightRust}",
           "fontStyle": ""
         }
       },
@@ -1243,20 +1224,20 @@ function schema({ colors, styles }) {
           "meta.link.reference.def.markdown markup.underline.link.markdown"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}",
+          "foreground": "${colors.lightRust}",
           "fontStyle": "underline"
         }
       },
       {
         "scope": ["markup.underline.link.markdown", "string.other.link.description.title.markdown"],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
         "scope": ["fenced_code.block.language", "markup.inline.raw.markdown"],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -1268,7 +1249,7 @@ function schema({ colors, styles }) {
           "punctuation.definition.italic.markdown"
         ],
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.lightRust}"
         }
       },
       {
@@ -1323,6 +1304,14 @@ function schema({ colors, styles }) {
         ],
         "settings": {
           "foreground": "${colors.gray}"
+        }
+      },
+      {
+        "scope": [
+          "constant.language.bool.rust"
+        ],
+        "settings": {
+          "foreground": "${colors.purple}"
         }
       }
     ]
