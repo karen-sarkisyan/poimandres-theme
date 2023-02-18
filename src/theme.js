@@ -17,7 +17,7 @@ const base = {
 
     darkerGray: '#ad9586',
     bluishGray: '#877f60',
-    focus: '#303340',
+    focus: '#403b30',
     bg: '#1b1e28',
 
     offWhite: '#F3F3F3',
@@ -38,11 +38,10 @@ const storm = {
   ...base,
   colors: {
     ...base.colors,
-    darkerGray: '#868cad',
-    bluishGray: '#607487',
-    focus: '#404350',
-    bg: '#252b37',
-    selection: '#818cc425',
+    rusty: '#F6B26B',
+    blue: '#87ace8',
+    bg: '#2d2a25',
+    selection: '#c4ae8125',
     black: '#101010',
   },
 }
@@ -1303,7 +1302,7 @@ function schema({ colors, styles }) {
           "string.quoted.double.rust"
         ],
         "settings": {
-          "foreground": "${colors.gray}"
+          "foreground": "${colors.offWhite}70"
         }
       },
       {
