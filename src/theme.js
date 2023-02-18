@@ -1,25 +1,45 @@
+// Rich's colors
+// #FFAB40 rusty
+// #F6B26B light rusty
+// #1b1e28 bg, but what Im looking for is  probably #27241b
+// #F3F3F3 whitish
+// #B4A7D6 purple
+// #6D9EEB blue
+// #93C47D green
+// #E06666 red
+// #ffd966 yellow
+// And some of mine colors
+// #877f60 rusty gray
+// #ad9586 darker gray rusty
+// #a3a2a0 basic gray
+
+// add colors for booleans for rust
+
 const base = {
   colors: {
-    brightYellow: '#fffac2',
-    brightMint: '#5DE4c7',
-    lowerMint: '#5fb3a1',
-    blueishGreen: '#42675A',
+    brightYellow: '#ffd966', // yellow
+    brightMint: '#FFAB40', // rusty, but untangle from literals
+    lowerMint: '#5fb3a1', // ???
 
-    lowerBlue: '#89ddff',
-    lightBlue: '#ADD7FF',
-    desaturatedBlue: '#91B4D5',
-    bluishGrayBrighter: '#7390AA',
+    rusty: '#FFAB40', // rusty
+    purple: '#B4A7D6', // purple
+    green: '#93C47D', // green
+    blue: '#6D9EEB', // blue
 
-    hotRed: '#d0679d',
-    pink: '#f087bd',
-    gray: '#a6accd',
+    lowerBlue: '#ffc38a', // probably to remove
+    lightBlue: '#fff4e5', // probably change to smth light rusty
+    bluishGrayBrighter: '#7390AA', // probably to remove
 
-    darkerGray: '#767c9d',
-    bluishGray: '#506477',
-    focus: '#303340',
-    bg: '#1b1e28',
+    hotRed: '#E06666', // red
+    pink: '#f087bd', // ???
+    gray: '#a3a2a0', // Parens, type annotations, almost fucking everything in UI around
 
-    offWhite: '#e4f0fb',
+    darkerGray: '#ad9586', // darker gray rusty
+    bluishGray: '#877f60', // rusty gray
+    focus: '#303340', // ???
+    bg: '#1b1e28', // background
+
+    offWhite: '#F3F3F3', // whitish
     selection: '#717cb425',
 
     white: '#ffffff',
@@ -582,6 +602,14 @@ function schema({ colors, styles }) {
         }
       },
       {
+        "scope": [         
+          "constant.language.boolean.true"
+        ],
+        "settings": {
+          "foreground": "${colors.green}"
+        }
+      },
+      {
         "scope": ["variable.parameter", "variable.other.readwrite.js", "meta.definition.variable variable.other.constant", "meta.definition.variable variable.other.readwrite"],
         "settings": {
           "foreground": "${colors.offWhite}"
@@ -608,13 +636,13 @@ function schema({ colors, styles }) {
       {
         "scope": ["keyword.control", "keyword"],
         "settings": {
-          "foreground": "${colors.gray}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
         "scope": ["keyword.operator", "storage.type"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -686,7 +714,7 @@ function schema({ colors, styles }) {
         "name": "Function/Class Name",
         "scope": "entity.name.function, meta.class entity.name.class, meta.class entity.name.type.class, meta.class meta.function-call variable.function, keyword.other.important",
         "settings": {
-          "foreground": "${colors.lightBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -707,8 +735,6 @@ function schema({ colors, styles }) {
           "support.constant",
           "constant.character",
           "constant.escape",          
-          "keyword.other.unit",
-          "keyword.other",
           "string",
           "constant.language",
           "constant.other.symbol",
@@ -718,7 +744,16 @@ function schema({ colors, styles }) {
           "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
         ],
         "settings": {
-          "foreground": "${colors.brightMint}"
+          "foreground": "${colors.offWhite}"
+        }
+      },
+      {
+        "scope": [   
+          "keyword.other.unit",
+          "keyword.other"
+        ],
+        "settings": {
+          "foreground": "${colors.rusty}"
         }
       },
       {
@@ -746,9 +781,15 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["keyword.control.as", "entity.name.type", "support.type"],
+        "scope": ["keyword.control.as", "support.type"],
         "settings": {
           "foreground": "${colors.gray}C0"
+        }
+      },
+      {
+        "scope": ["entity.name.type"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -761,7 +802,7 @@ function schema({ colors, styles }) {
           "support.type.sys-types"
         ],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -792,27 +833,27 @@ function schema({ colors, styles }) {
       {
         "scope": ["variable.language"],
         "settings": {
-          "foreground": "${colors.lightBlue}",
+          "foreground": "${colors.purple}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
       {
         "scope": ["entity.name.method.js"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}",
+          "foreground": "${colors.offWhite}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
       {
         "scope": ["meta.class-method.js entity.name.function.js", "variable.function.constructor"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
         "scope": ["entity.other.attribute-name"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}",
+          "foreground": "${colors.offWhite}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
@@ -832,7 +873,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["source.sass keyword.control"],
         "settings": {
-          "foreground": "${colors.blueishGreen}"
+          "foreground": "${colors.green}"
         }
       },
       {
@@ -850,7 +891,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["markup.changed"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -860,7 +901,10 @@ function schema({ colors, styles }) {
         }
       },
       {
-        "scope": ["constant.character.escape"],
+        "scope": [
+          "constant.character.escape",
+          "string.quoted.byte.raw.rust"
+        ],
         "settings": {
           "foreground": "${colors.lowerMint}"
         }
@@ -875,7 +919,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["tag.decorator.js entity.name.tag.js", "tag.decorator.js punctuation.definition.tag.js"],
         "settings": {
-          "foreground": "${colors.blueishGreen}",
+          "foreground": "${colors.green}",
           "fontStyle": "${styles.fontStyle}"
         }
       },
@@ -905,7 +949,7 @@ function schema({ colors, styles }) {
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -937,7 +981,7 @@ function schema({ colors, styles }) {
           "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
         ],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -971,7 +1015,7 @@ function schema({ colors, styles }) {
       {
         "scope": ["text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -1080,13 +1124,13 @@ function schema({ colors, styles }) {
           "punctuation.section.class.end"
         ],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
         "scope": ["variable.language.fenced.markdown"],
         "settings": {
-          "foreground": "${colors.desaturatedBlue}"
+          "foreground": "${colors.offWhite}"
         }
       },
       {
@@ -1235,6 +1279,48 @@ function schema({ colors, styles }) {
       },
       {
         "scope": ["log.verbose"],
+        "settings": {
+          "foreground": "${colors.gray}"
+        }
+      },
+      {
+        "scope": ["source.rust"],
+        "settings": {
+          "foreground": "${colors.offWhite}"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.type.rust",
+          "entity.name.type.numeric.rust"
+        ],
+        "settings": {
+          "foreground": "${colors.gray}"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.type.lifetime.rust",
+          "punctuation.definition.lifetime.rust"
+        ],
+        "settings": {
+          "foreground": "${colors.blue}"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function.macro.rust",
+          "punctuation.brackets.square.rust",
+          "punctuation.semi.rust"
+        ],
+        "settings": {
+          "foreground": "${colors.rusty}"
+        }
+      },
+      {
+        "scope": [
+          "string.quoted.double.rust"
+        ],
         "settings": {
           "foreground": "${colors.gray}"
         }
