@@ -9,11 +9,11 @@ function requireUncached(module) {
 
 function generateTheme() {
   const { base, noitalics, storm, stormNoitalics, schema, svg } = requireUncached('./theme')
-  fs.writeFile('themes/poimandres-color-theme.json', schema(base), (err) => err && console.log(err))
-  fs.writeFile('themes/poimandres-color-theme-storm.json', schema(storm), (err) => err && console.log(err))
-  fs.writeFile('themes/poimandres-color-theme-noitalics.json', schema(noitalics), (err) => err && console.log(err))
+  fs.writeFile('themes/pmndrs-rusty-color-theme.json', schema(base), (err) => err && console.log(err))
+  fs.writeFile('themes/pmndrs-rusty-color-theme-storm.json', schema(storm), (err) => err && console.log(err))
+  fs.writeFile('themes/pmndrs-rusty-color-theme-noitalics.json', schema(noitalics), (err) => err && console.log(err))
   fs.writeFile(
-    'themes/poimandres-color-theme-noitalics-storm.json',
+    'themes/pmndrs-rusty-color-theme-noitalics-storm.json',
     schema(stormNoitalics),
     (err) => err && console.log(err),
   )

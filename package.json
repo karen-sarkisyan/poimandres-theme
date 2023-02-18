@@ -1,8 +1,8 @@
 {
-  "name": "pmndrs",
+  "name": "pmndrs-rusty",
   "icon": "assets/pmndrs.png",
-  "displayName": "poimandres",
-  "description": "poimandres dark theme",
+  "displayName": "pmndrs-rusty",
+  "description": "pmndrs-rusty dark theme",
   "version": "0.3.7",
   "keywords": [
     "poimandres",
@@ -37,24 +37,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "poimandres",
+        "label": "pmndrs-rusty",
         "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme.json"
+        "path": "./themes/pmndrs-rusty-color-theme.json"
       },
       {
-        "label": "poimandres-noitalics",
+        "label": "pmndrs-rusty-noitalics",
         "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme-noitalics.json"
+        "path": "./themes/pmndrs-rusty-color-theme-noitalics.json"
       },
       {
-        "label": "poimandres-storm",
+        "label": "pmndrs-rusty-storm",
         "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme-storm.json"
+        "path": "./themes/pmndrs-rusty-color-theme-storm.json"
       },
       {
-        "label": "poimandres-noitalics-storm",
+        "label": "pmndrs-rusty-noitalics-storm",
         "uiTheme": "vs-dark",
-        "path": "./themes/poimandres-color-theme-noitalics-storm.json"
+        "path": "./themes/pmndrs-rusty-color-theme-noitalics-storm.json"
       }
     ]
   },

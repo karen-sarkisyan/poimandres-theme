@@ -40,7 +40,7 @@ const storm = {
     ...base.colors,
     rusty: '#F6B26B',
     blue: '#87ace8',
-    bg: '#2d2a25',
+    bg: '#2a2722',
     selection: '#c4ae8125',
     black: '#101010',
   },
@@ -54,7 +54,7 @@ const stormNoitalics = {
 
 function schema({ colors, styles }) {
   return `{
-    "name": "poimandres dark theme",
+    "name": "pmndrs-rusty dark theme",
     "type": "dark",
     "colors": {
       "activityBar.background": "${colors.bg}",
