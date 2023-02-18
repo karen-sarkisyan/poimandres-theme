@@ -1257,6 +1257,22 @@
         "settings": {
           "foreground": "#B4A7D6"
         }
+      },
+      {
+        "scope": [
+          "punctuation.brackets.angle.rust"
+        ],
+        "settings": {
+          "foreground": "#ffc38a90"
+        }
+      },
+      {
+        "scope": [
+          "support.type.property-name.json.comments"
+        ],
+        "settings": {
+          "foreground": "#FFAB40"
+        }
       }
     ]
   }

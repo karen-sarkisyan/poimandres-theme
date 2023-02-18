@@ -1312,6 +1312,22 @@ function schema({ colors, styles }) {
         "settings": {
           "foreground": "${colors.purple}"
         }
+      },
+      {
+        "scope": [
+          "punctuation.brackets.angle.rust"
+        ],
+        "settings": {
+          "foreground": "${colors.lowerRust}90"
+        }
+      },
+      {
+        "scope": [
+          "support.type.property-name.json.comments"
+        ],
+        "settings": {
+          "foreground": "${colors.rusty}"
+        }
       }
     ]
   }
